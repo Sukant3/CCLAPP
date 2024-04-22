@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breast Cancer Prediction</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        html {
+            text-align: center;
+            font-family: "Poppins";
+            background-color: black;
+            color: white;
+        }
+
+        h1 {
+            color: rgb(251, 109, 109);
+        }
+
+        form {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input {
+            width: 200px;
+            height: 20px;
+            background-color: wheat;
+        }
+
+        .button {
+            background-color: aquamarine;
+            font-family: "Poppins";
+            font-size: x-large;
+            width: 200px;
+            height: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Breast Cancer Prediction</h1>
+    <form action="/predict" method="post">
+        <label for="param_0">Mean Radius:</label>
+        <input type="text" id="param_0" name="param_0"><br><br>
+
+        <label for="param_1">Mean Texture:</label>
+        <input type="text" id="param_1" name="param_1"><br><br>
+
+        <label for="param_2">Mean Perimeter:</label>
+        <input type="text" id="param_2" name="param_2"><br><br>
+
+        <label for="param_3">Mean Area:</label>
+        <input type="text" id="param_3" name="param_3"><br><br>
+
+        <label for="param_4">Mean Smoothness:</label>
+        <input type="text" id="param_4" name="param_4"><br><br>
+
+        <label for="param_5">Mean Compactness:</label>
+        <input type="text" id="param_5" name="param_5"><br><br>
+
+        <label for="param_6">Mean Concavity:</label>
+        <input type="text" id="param_6" name="param_6"><br><br>
+
+        <label for="param_7">Mean Concave Points:</label>
+        <input type="text" id="param_7" name="param_7"><br><br>
+
+        <label for="param_8">Mean Symmetry:</label>
+        <input type="text" id="param_8" name="param_8"><br><br>
+
+        <label for="param_9">Mean Fractal Dimension:</label>
+        <input type="text" id="param_9" name="param_9"><br><br>
+
+        <label for="param_10">Radius Error:</label>
+        <input type="text" id="param_10" name="param_10"><br><br>
+
+        <label for="param_11">Texture Error:</label>
+        <input type="text" id="param_11" name="param_11"><br><br>
+
+        <label for="param_12">Perimeter Error:</label>
+        <input type="text" id="param_12" name="param_12"><br><br>
+
+        <label for="param_13">Area Error:</label>
+        <input type="text" id="param_13" name="param_13"><br><br>
+
+        <label for="param_14">Smoothness Error:</label>
+        <input type="text" id="param_14" name="param_14"><br><br>
+
+        <label for="param_15">Compactness Error:</label>
+        <input type="text" id="param_15" name="param_15"><br><br>
+
+        <label for="param_16">Concavity Error:</label>
+        <input type="text" id="param_16" name="param_16"><br><br>
+
+        <label for="param_17">Concave Points Error:</label>
+        <input type="text" id="param_17" name="param_17"><br><br>
+
+        <label for="param_18">Symmetry Error:</label>
+        <input type="text" id="param_18" name="param_18"><br><br>
+
+        <label for="param_19">Fractal Dimension Error:</label>
+        <input type="text" id="param_19" name="param_19"><br><br>
+
+        <label for="param_20">Worst Radius:</label>
+        <input type="text" id="param_20" name="param_20"><br><br>
+
+        <label for="param_21">Worst Texture:</label>
+        <input type="text" id="param_21" name="param_21"><br><br>
+
+        <label for="param_22">Worst Perimeter:</label>
+        <input type="text" id="param_22" name="param_22"><br><br>
+
+        <label for="param_23">Worst Area:</label>
+        <input type="text" id="param_23" name="param_23"><br><br>
+
+        <label for="param_24">Worst Smoothness:</label>
+        <input type="text" id="param_24" name="param_24"><br><br>
+
+        <label for="param_25">Worst Compactness:</label>
+        <input type="text" id="param_25" name="param_25"><br><br>
+
+        <label for="param_26">Worst Concavity:</label>
+        <input type="text" id="param_26" name="param_26"><br><br>
+
+        <label for="param_27">Worst Concave Points:</label>
+        <input type="text" id="param_27" name="param_27"><br><br>
+
+        <label for="param_28">Worst Symmetry:</label>
+        <input type="text" id="param_28" name="param_28"><br><br>
+
+        <label for="param_29">Worst Fractal Dimension:</label>
+        <input type="text" id="param_29" name="param_29"><br><br>
+
+        <input type="submit" value="Predict" class="button">
+    </form>
+</body>
+
+</html>
